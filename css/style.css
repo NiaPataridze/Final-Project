@@ -26,11 +26,18 @@ header {
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
     /* border: 2px solid blue; */
 }
 
 .burger {
+    display: none;
+}
+
+.fa-xmark {
     display: none;
 }
 
@@ -679,7 +686,7 @@ figcaption {
     flex-direction: column;
     gap: 26px;
     border-radius: 10px;
-    transition: all 0.5s linear;    
+    transition: all 0.5s linear;
 }
 
 .item:hover {
@@ -1154,7 +1161,7 @@ footer {
         width: 100%;
     }
 
-    .all_category{
+    .all_category {
         width: 90%;
         margin-top: 80px;
     }
@@ -1181,11 +1188,37 @@ footer {
 
 @media (max-width:768px) {
     nav {
-        display: none;
+        width: 0;
+    }
+
+    ul {
+        width: 50%;
+        height: 160px;
+        background-color: #B53B1B;
+        position: fixed;
+        top: 96px;
+        left: -100%;
+        gap: 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: 1s linear;
     }
 
     .burger {
-        display: flex;
+        display: block;
+    }
+
+    .fa-xmark {
+        color: white;
+    }
+
+    .nav_color1 {
+        color: white;
+    }
+
+    .show {
+        left: 0;
     }
 
     .sign {
@@ -1283,7 +1316,7 @@ footer {
 
     .map_container {
         height: 100%;
-        display: flex; 
+        display: flex;
         flex-direction: column;
         gap: 24px;
         padding-bottom: 64px;
@@ -1446,6 +1479,7 @@ footer {
     .search {
         width: 100%;
     }
+
     .category_sort {
         width: 90%;
         align-items: center;
