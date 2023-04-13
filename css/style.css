@@ -483,6 +483,8 @@ figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .article3_title1 {
@@ -1434,6 +1436,7 @@ footer {
 
     .article3_title1 {
         padding-top: 64px;
+        width: 80%;
     }
 
     .article3_title2 {
